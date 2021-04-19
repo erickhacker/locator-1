@@ -345,6 +345,7 @@ sleep 5
 #link=$(curl -s -N http://127.0.0.1:4040/api/tunnels  > link.txt)
 send_link=$(cat link.txt | cut -d',' -f3 | cut -d '"' -f4)
 link=$(curl -s -N http://127.0.0.1:4040/api/tunnels > link.txt)
+
 send_link=$(cat link.txt | cut -d',' -f3 | cut -d '"' -f4)
 printf "\e[1;92m[\e[0m*\e[1;92m] Send this link to the Target:\e[0m\e[1;77m %s\e[0m\n" $send_link
 #send_ip=$(curl -s http://tinyurl.com/api-create.php?url=$link)
