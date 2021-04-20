@@ -1,6 +1,6 @@
 # Locator v1.2
 ## Author: github.com/thelinuxchoice/locator
-## Modified by: github.com/erick-arch/locator-1
+## Modified by: github.com/erick-arch/locator
 ## IG: instagram.com/thelinuxchoice
 ### Don't copy this code without give me the credits, nerd! 
 
