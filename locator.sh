@@ -408,7 +408,7 @@ printf "\e[1;77m | |_____| |_| |( (___ / ___ |  | |_| |_| || |     \e[0m\n"
 printf "\e[1;77m |_______)\___/  \____)\_____|   \__)\___/ |_|    v1.2 \e[0m\n"
 printf "\n"
 printf "\e[1;93m :::\e[0m\e[1;77m Coded by: @thelinuxchoice\e[0m\n"
-printf "\e[1;93m :::\e[0m\e[1;77m Modified by: @itdaglog\e[0m\n"
+printf "\e[1;93m :::\e[0m\e[1;77m Modified by: @anonime\e[0m\n"
 }
 banner
 dependencies
